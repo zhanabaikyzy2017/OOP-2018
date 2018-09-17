@@ -24,7 +24,6 @@ class  Student {
 }public class Problem1 {
         public static void main(String[] args) {
             Student s = new Student("Assem", 1);
-            //System.out.println("safsd");
             System.out.println(s.GetName());
             System.out.println(s.GetId());
             s.YearIncrement();

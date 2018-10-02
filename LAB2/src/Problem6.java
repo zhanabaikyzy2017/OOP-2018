@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-class Num{
+class Numbers{
 
-    public String one(char s)
+    public static String one(char s)
     {
         String res = "";
         switch(s){
@@ -39,7 +39,7 @@ class Num{
         return res;
 
     }
-    public String second(String sn)
+    public static String second(String sn)
     {
         char sc = sn.charAt(sn.length()-1);
         char sx = sn.charAt(sn.length()-2);
@@ -117,7 +117,7 @@ class Num{
     }
 
 
-    public String inWords(int n){
+    public static String inWords(int n){
         String sn = "" + n;
         String res;
         String res1 = "";
@@ -156,7 +156,7 @@ class Num{
                 res2 = res2 + " hundred ";
             }else{
                 if(res2.length()!=0){
-                    res2 = res2 + " hu7гndreds ";
+                    res2 = res2 + " hundreds ";
                 }
             }
         }
@@ -168,7 +168,7 @@ public class Problem6{
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
-        Num num = new Num();
-        System.out.println(num.inWords(n));
+       // Num num = new Num();
+        System.out.println(Numbers.inWords(n));
     }
 }

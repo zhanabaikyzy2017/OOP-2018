@@ -2,6 +2,7 @@ class Time{
     private int hour;
     private int min;
     private int sec;
+
     Time(int a, int b, int c){
         this.sec = c;
         if(this.sec >= 60){

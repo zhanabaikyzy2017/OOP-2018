@@ -24,13 +24,11 @@ class Employee extends Person{
 
     @Override
     public boolean equals(Object p) {
-       if(p == this) return true;
+       //if(p == this) return true;
        Employee e = (Employee) p;
        return super.equals(p)&&
                e.salary == this.salary&&
                e.year == this.year&&
                e.insuranceNumber == this.insuranceNumber;
-
     }
-
 }

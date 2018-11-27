@@ -10,6 +10,7 @@ class Manager extends Employee {
         this.team = emp;
 
     }
+
     public int getBonus(){return bonus;}
     public Employee[] getEmployees(){return this.team;}
 
@@ -18,9 +19,9 @@ class Manager extends Employee {
 
     @Override
     public boolean equals(Object o) {
-        if(o == this) return true;
+        if(o != this) return false;
         Manager m = (Manager)o;
-        return /*super.equals(o)&&*/
+        return super.equals(o)&&
                 m.bonus == this.bonus&&
                 m.team == this.team;
     }

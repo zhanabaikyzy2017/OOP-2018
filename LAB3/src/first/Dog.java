@@ -6,10 +6,12 @@ class Dog extends Animal{
         super();
         color = "no color";
     }
+
     public Dog(String n, String c){
         super(n);
         color = c;
     }
+
     public String getColor(){return color;}
     public void setColor(String s){this.color = s;}
 
@@ -18,4 +20,6 @@ class Dog extends Animal{
         super.Show();
         System.out.println(getColor());
     }
+
+
 }

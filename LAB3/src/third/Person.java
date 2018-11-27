@@ -14,7 +14,7 @@ class Person {
     }
 
     public boolean equals(Object p){
-        if(p == this) return true;
+       // if(p == this) return true;
         Person person = (Person)p;
         return person.name == this.name;
     }

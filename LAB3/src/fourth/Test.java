@@ -18,6 +18,7 @@ public class Test {
         String s2 = ref.getName();
         System.out.println(s2);
 
+
         printInfo(studobj);
         printInfo(empobj);
 

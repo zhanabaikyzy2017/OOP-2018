@@ -1,10 +1,9 @@
 package fifth;
 
 class Bishop extends Piece {
-    private Position a,b;
-    Bishop(Position a, Position b){
+    public Position a;
+    Bishop(Position a){
         this.a =a;
-        this.b = b;
     }
 
     @Override
